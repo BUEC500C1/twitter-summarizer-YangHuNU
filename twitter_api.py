@@ -3,13 +3,6 @@ import tweepy #Installed on premises
 import json
 from google_vision_api import google_vision
 
-#Twitter API credentials
-"""
-consumer_key = ""
-consumer_secret = ""
-access_key = ""
-access_secret = ""
-"""
 with open("twitter_api_key.json") as f:
 	keys = json.load(f)
 
