@@ -6,7 +6,7 @@ prog_pass = 1
 
 def test_sample1():
 	try: 
-		test_run("Yang199703")
+		test_run('Yang199703')
 	except(tweepy.TweepError):
 		assert prog_pass == 1
 	except(KeyError, NameError):
