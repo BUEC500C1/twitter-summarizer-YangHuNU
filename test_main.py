@@ -11,6 +11,4 @@ def test_sample1():
 	else:
 		assert prog_pass == 1
 
-def test_sample2():
-
-
+# def test_sample2():
