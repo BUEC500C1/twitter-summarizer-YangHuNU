@@ -1,11 +1,11 @@
 import pytest
-from main import main
+from main import test_run
 
 prog_pass = 1
 
 def test_sample1():
 	try: 
-		main("Yang199703")
+		test_run("Yang199703")
 	except(KeyError, NameError):
 		assert prog_pass == 0
 	else:
