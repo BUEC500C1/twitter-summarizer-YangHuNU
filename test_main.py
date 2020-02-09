@@ -6,12 +6,12 @@ prog_pass = 1
 
 def test_sample1():
 	try: 
-		test_run('Yang199703')
+		print(test_run())
 	except(tweepy.TweepError):
-		assert prog_pass == 1
+		assert 1
 	except(KeyError, NameError):
-		assert prog_pass == 0
+		assert 0
 	else:
-		assert prog_pass == 1
+		assert 1
 
 # def test_sample2():
