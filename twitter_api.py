@@ -4,16 +4,20 @@ import json
 from google_vision_api import google_vision
 
 #Twitter API credentials
+"""
 consumer_key = ""
 consumer_secret = ""
 access_key = ""
 access_secret = ""
+"""
+with open("twitter_api_key.json") as f:
+	keys = json.load(f)
 
 def get_all_tweets(screen_name):
 
 	#authentication
-	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-	auth.set_access_token(access_key, access_secret)
+	auth = tweepy.OAuthHandler(keys['consumer_key'], keys['consumer_secret'])
+	auth.set_access_token(keys['access_key'], keys['access_secret'])
 	api = tweepy.API(auth)
 
 	#grabbing tweets
